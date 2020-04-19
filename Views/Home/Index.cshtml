@@ -1,22 +1,22 @@
 ﻿@{
-   
+
     Layout = null;
 }
 
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width" />
-        <title>Index</title>
-    </head>
-    <body>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
 
-        <div>
-            Hello World @ViewBag.time
-            <p>
-                We're going to have an exciting party.<br />
-                (To do: sell it better. Add pictures or something.)
-            </p>
-            <a asp-action="RsvpForm">RSVP Now</a>
-</div>
-    </body>
+    <div class="text-center">
+        <h2> Hello World @ViewBag.time</h2>
+        <h3>We're going to have an exciting party!</h3>
+        <h4>And you are invited</h4>
+       <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
+    </div>
+</body>
 </html>
+
